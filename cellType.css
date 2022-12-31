@@ -1,0 +1,46 @@
+.cell .cell_content {
+    position: relative;
+    top: 0%;
+    left: 0%;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(#00000000, #00000050);
+    /* box-shadow: 0.4rem 0.4rem 0.25rem #0000007c; */
+
+    border: 0.2rem solid black;
+    box-sizing: inherit;
+
+    pointer-events: none;
+
+    transition: 0.35s;
+}
+.cell:hover .cell_content {
+    filter: brightness(200%);
+    z-index: 2;
+}
+.cell_content.square {
+    background-color: #f00;
+    border-color: #700;
+
+    border-radius: 0.5vh;
+}
+.cell_content.circle {
+    background-color: #0f0;
+    border-color: #070;
+
+    border-radius: 100vh;
+}
+.cell_content.diamond {
+    background-color: #00f;
+    border-color: #007;
+
+    border-radius: 5vh 25vh 5vh 5vh;
+}
+.cell_content.oval {
+    background-color: #fd0;
+    border-color: #750;
+
+    border-radius: 5vh 25vh;
+}
